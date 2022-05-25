@@ -1,0 +1,861 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: beige;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.line{
+  position: relative;
+  left: 609px;
+}
+header{
+  width: 100%;
+  height: 650px;
+  background-image: url(images/hea.jpg);
+}
+.header-container{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+    
+}
+/* .headerLogo{
+  position: relative;
+  top: 18px;
+  left: 20px;
+} */
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(66, 66, 66, .7);
+  }
+  nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 10px;
+    color: #fff;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 50px; 
+  }
+.mainTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15% auto;
+}
+.welcome{
+  color: #fffc00;
+  font-size: 70px;
+}
+.welcomeG{
+  font-size: 90px;
+  background: linear-gradient(to right, #ffffff 20%, #fffc00 80%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+/*   nav ul li a:hover,
+  nav ul li a.active{
+    color: #fffc00;
+    transition: 1.2s;
+  }  */
+  .aboutUs{
+    width: 100%;
+    height: 700px;
+    display: block;
+    margin-top: 50px;
+  }
+  .discoverText{
+    color: rgb(199, 166, 0);
+  }
+  .discoverText, .aboutUsTitle, .containerLineTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  }
+  .aboutUsTitle{
+    font-weight: 600;
+  }
+  .containerLineTop{
+    width: 300px;
+    height: 20px;
+    justify-content: space-around;
+    margin: 0px 0px 0px 612px;
+  }
+  .firstLine, .secondLine{
+    width: 120px;
+    height: 3px;
+    background-color: rgb(199, 166, 0);
+  }
+  .containerBlock{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+
+  }
+  .textAreaAboutUs{
+    width: 50%;
+    text-align: justify;
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+.counters{
+  width: 80%;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url('images/3.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: 600;
+}
+.container{
+  max-width: 1100px;
+  overflow: auto;
+}
+.counters .container{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4,1fr);
+  text-align: center;
+}
+.counter i{
+  color: beige;
+  margin-bottom: 5px;
+}
+.counters .counter{
+  font-size: 45px;
+  margin: 10px 0;
+}
+.descriptionTextCounter{
+  font-size: 24px;
+}
+.restaurantMenu{
+  width: 100%;
+  height: 700px;
+  display: block;
+  margin-top: 50px;
+  background-color: antiquewhite;
+}
+.menuContainer{
+  height: 725px;
+  width: 935px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600 !important;
+}
+.topMenuContainer, .bottomMenuContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottomMenuContainer{
+  padding-top: 20px;
+}
+.breakfastIcon, .mealsIcon, .snacksIcon{
+  height: 310px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+}
+.breakfastMealsIcon, .dessertsIcon{
+  width: 620px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.drinkIcon{
+  width: 300px;
+  height: 310px;
+  text-decoration: none;
+}
+.breakfastIcon, .mealsIcon, .snacksIcon, .dessertsIcon, .drinkIcon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+}
+.drinkIcon, .dessertsIcon, .breakfastIcon, .mealsIcon, .snacksIcon{
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.drinkIcon:before{
+  z-index:-1;
+  position:absolute;
+  left:0;
+  top:0;
+  content: url('images/drinkIcon.jpg');
+  opacity:0.6;
+
+}
+.dessertsIcon:before{
+  z-index:-1;
+  position:absolute;
+  left:0;
+  top:0;
+  content: url('images/dessertsIcon.jpg');
+  opacity:0.6;
+}
+.mealsIcon:before{
+  z-index:-1;
+  position:absolute;
+  left:0;
+  top:0;
+  content: url('images/mealIcon.jpg');
+  opacity:0.6;
+}
+.breakfastIcon:before{
+  z-index:-1;
+  position:absolute;
+  left:0;
+  top:0;
+  content: url('images/breakfastIcon.jpg');
+  opacity:0.6;
+}
+.snacksIcon:before{
+  z-index:-1;
+  position:absolute;
+  left:0;
+  top:0;
+  content: url('images/snacksIcon1.jpg');
+  opacity:0.6;
+}
+.breakfastIcon:hover:before{
+  opacity:1;
+  transition: opacity 1s linear;
+
+}
+.mealsIcon:hover:before{
+  opacity:1;
+  transition: opacity 1s linear;
+
+}
+.snacksIcon:hover:before{
+  opacity:1;
+  transition: opacity 1s linear;
+
+}
+.dessertsIcon:hover:before{
+  opacity:1;
+  transition: opacity 1s linear;
+
+}
+.drinkIcon:hover:before{
+  opacity:1;
+  transition: opacity 1s linear;
+
+}
+.breakfastIcon:hover{
+  font-size: 70px;
+  transition: 1s linear;
+}
+.mealsIcon:hover{
+  font-size: 70px;
+  transition: 1s linear;
+}
+.snacksIcon:hover{
+  font-size: 70px;
+  transition: 1s linear;
+}
+.dessertsIcon:hover{
+  font-size: 70px;
+  transition: 1s linear;
+}
+.drinkIcon:hover{
+  font-size: 70px;
+  transition: 1s linear;
+}
+.reservation{
+  max-width: 80%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(66, 66, 66);
+  margin: 0 auto;
+}
+.reservationContainer{
+  width: 80%;
+  height: 100%;
+}
+.reservationLine{
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 330px;
+}
+.reservationTitle{
+  color: #fff;
+}
+.form{
+  width: 650px;
+  margin: 10px auto;
+}
+
+.form-text{
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+.form-text h1 span img{
+  margin: 0 10px;
+
+}
+.form-text h1{
+  color: #fff;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#people{
+  background-color: rgb(66, 66, 66);
+}
+.form-text p{
+  color: #fff;
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: large;
+}
+
+.main-form div{
+  margin: 10px 10px;
+  width: 300px;
+  display: inline-block;
+}
+.main-form div input {
+  width: 100%;
+  font-family: 'Akaya Telivigala', cursive;
+  background: none;
+  border: 1px solid #ffca00;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  margin-top: 10px;
+}
+.main-form div select{
+  width: 100%;
+  font-family: 'Akaya Telivigala', cursive;
+  background: none;
+  border: 1px solid #ffca00;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  margin-top: 10px;
+}
+.main-form div span{
+  width: 100%;
+  font-family: 'Akaya Telivigala', cursive;
+  color: #fff;
+  font-size: 25px;
+}
+
+#submit{
+  width: 100%;
+  text-align: center;
+}
+#submit input{
+  font-family: 'Akaya Telivigala', cursive;
+  width: 200px;
+  background-color: yellow !important;
+  color: black !important;
+  transition: all .3s;
+}
+#submit input:hover{
+  font-family: 'Akaya Telivigala', cursive;
+  width: 200px;
+  background-color: black !important;
+  color: #fff !important;
+}
+#submit input:active{
+  font-size: 19px;
+  background-color: rgb(46, 20, 5) !important;
+  color: #fff !important;
+}
+.gallery{
+    width: 100%;
+    height: 700px;
+    display: block;
+    margin-top: 50px;
+}
+.imageWrapper{
+  width: 1000px;
+  height: 665px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.slider{
+  animation: sliderAnimate 40s infinite ease;
+  width: 4000px;
+  height: 665px;
+  clear: both;
+  position: relative;
+}
+.imageWrap{
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: left;
+}
+@keyframes sliderAnimate {
+  0%{left: 0;}
+  10%{left: -1000px;}
+  20%{left: -2000px;}
+  30%{left: -3000px;}
+  80%{left: -2000px;}
+  90%{left: -1000px;}
+  100%{left: 0;}
+}
+.ourSlogan{
+  width: 80%;
+  min-height: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url('images/3.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 100px auto;
+  color: #fff;
+}
+.ourSloganContainer{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ourSloganBlock{
+  position: relative;
+  top: -60px;
+}
+.ourSloganLine{
+  position: relative;
+  left: 0px;
+}
+.ourQuote{
+  width: 70%;
+  font-size: 28px;
+  text-align: justify;
+  padding-bottom: 40px;
+}
+.masterChefsTitle{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+
+}
+.containerLineTop{
+  margin-left: 3px;
+}
+.masterChefTitle{
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: 600;
+}
+.masterChefs{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.chef{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+}
+.firstChef, .secondChef, .thirdChef, .fourthChef{
+  width: 99.5%;
+  height: 80%;
+  background-size: cover;
+}
+.firstChef{
+  background: url('images/firstChef.jpg') no-repeat center;
+}
+.secondChef{
+  background: url('images/secondChef.jpg') no-repeat center;
+}
+.thirdChef{
+  background: url('images/thirdChef.jpg') no-repeat center;
+}
+.fourthChef{
+  background: url('images/fourthChef.jpg') no-repeat center;
+}
+.chefName{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffca00;
+  position: relative;
+  top: -30px;
+}
+.chefPosition{
+  position: relative;
+  top: -20px;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.chefIcon{
+  width: 150px;
+  font-size: 30px;
+  color: white;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 0px;
+}
+.socialMedia{
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+}
+.socialMedia:hover{
+  transform: scale(1.5);
+  transition: 2s;
+}
+.instagram:hover{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.twitter:hover{
+  background: #009FFF;
+  background: -webkit-gradient(linear, left top, right top, from(#ec2F4B), to(#009FFF));
+  background: linear-gradient(to right, #ec2F4B, #009FFF);
+}
+.facebook:hover{
+  background: #333333;
+  background: -webkit-gradient(linear, left top, right top, from(#dd1818), to(#333333));
+  background: linear-gradient(to right, #dd1818, #333333);
+}
+.contacts{
+  width: 80%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  background: url(images/contactimage1.jpg) no-repeat center;
+  background-attachment: fixed;
+  font-weight: 600 !important;
+}
+.titleContacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;   
+}
+.contactsTitle{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 15px;
+}
+.formContacts{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+}
+.contactsDescription{
+  width: 45%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: justify;
+  margin: 0 auto;
+  margin-left: 100px;
+  padding-left: 40px;
+  font-size: 18px;
+  color: #fff;
+}
+.address{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+.phoneOffice, .emailOffice, .locationOffice{
+  padding: 20px 0px 10px 0px;
+}
+.titleCont{
+  color: rgb(199, 166, 0) !important;
+  font-size: 30px;
+}
+.formContactWithUs {
+  position: relative;
+  top: 40%;
+  left: 25%;
+  width: 500px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+/*   background-color: rgb(66, 66, 66); */
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+.formContactWithUs .user-box {
+  position: relative;
+}
+
+.formContactWithUs .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.formContactWithUs .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.formContactWithUs .user-box input:focus ~ label,
+.formContactWithUs .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #ffca00;
+  font-size: 16px;
+}
+
+.formContactWithUs form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffca00;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.formContactWithUs a:hover {
+  color: #ffca00;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ffca00,
+              0 0 25px #ffca00,
+              0 0 50px #ffca00,
+              0 0 100px #ffca00;
+}
+
+.formContactWithUs a span {
+  position: absolute;
+  display: block;
+}
+
+.formContactWithUs a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffca00);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.formContactWithUs a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffca00);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.formContactWithUs a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffca00);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.formContactWithUs a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffca00);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+.map{
+  width: 80%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+}
+iframe{
+  width: 100%;
+  height: 100%;
+}
+footer{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(66, 66, 66);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerMedia{
+  width: 350px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.instagramFooter, .facebookFooter, .twitterFooter, .youtubeFooter, .googleFooter{
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.instagramFooter:hover{
+  background-color: #fffc00;
+  border-radius: 50%;
+  transition: .9s;
+}
+.facebookFooter:hover{
+  background-color: #fffc00;
+  border-radius: 50%;
+  transition: .9s;
+}
+.twitterFooter:hover{
+  background-color: #fffc00;
+  border-radius: 50%;
+  transition: .9s;
+}
+.youtubeFooter:hover{
+  background-color: #fffc00;
+  border-radius: 50%;
+  transition: .9s;
+}
+.googleFooter:hover{
+  background-color: #fffc00;
+  border-radius: 50%;
+  transition: .9s;
+}

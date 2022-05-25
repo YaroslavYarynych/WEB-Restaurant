@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMBERO</title> 
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="menu.html">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav id="navig">
+              <!-- <img src="styles/images/logo.png" alt="" class="headerLogo"> -->
+              <ul id="menuUl">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#aboutUs">ABOUT US</a></li>
+                <li><a href="#restaurantMenu">MENU</a></li>
+                <li><a href="#reservation">RESERVATION</a></li>
+                <li><a href="#sliderGallery">GALLERY</a></li>
+                <li><a href="#chefs">OUR TEAM</a></li>
+                <li><a href="#contact">CONTACT</a></li>  
+              </ul>
+            </nav>
+          <div class="mainTitle">
+            <h1 class="welcome">Welcome</h1>
+            <h2 class="welcomeG">To the Gambero</h2>
+          </div>
+        </div>  
+    </header>
+    <section class="aboutUs">
+      <p class="discoverText">Discover</p>
+      <p class="aboutUsTitle" id="aboutUs">ABOUT US</p>
+      <div class="containerLineTop line">
+        <div class="firstLine"></div>
+      <div class="spoon"><img src="styles/images/311611.svg" alt="" width="20" height="20"></div>
+      <div class="secondLine"></div>
+      </div>
+      <div class="containerBlock">
+        <p class="textAreaAboutUs">
+          Gembero’s restaurant conjures up images of highly skilled chefs, fine wines, superb service, and fresh Italian food. And while all this is most certainly true, one must not forget that Gembero’s is above all an experience. An exceptional dining experience, to be precise, but one that takes place in a casual atmosphere reminiscent of the quaint eateries and wine bars of the Italian countryside. And no wonder. The experience is fashioned after the small village of Gembero, Italy, home to the founder’s ancestry. Imported direct from Italy are the beauty, comfort, romance, and glorious recipes. Specialty dishes include perfectly prepared pasta dishes using the finest imported and local ingredients; fennel roasted rack of pork; homemade risotto dishes; grilled steaks; shrimp; seafood; and a fresh catch feature every day. All served with a world class wine menu to match. Gembero’s has received Wine Spectator’s prestigious “Best of Award of Excellence” every year since we opened in 1999. It’s a simple, colorful, elegant, and exceptional dining experience.
+        </p>
+        <div class="imageForAboutUs">
+          <img src="styles/images/slider4.jpg" alt="" width="500" height="400">
+        </div>
+      </div>
+    </section>
+    <section class="counters" data-parallax="scroll" 
+    data-z-index="1" data-image-src="'images/2.jpg'">
+      <div class="container">
+        <div>
+      <i class="fresh">Fresh</i>
+      <div class="counter" data-target="50">0</div>
+      <p class="descriptionTextCounter">Breakfast Items</p>
+        </div>
+        <div>
+          <i class="delicious">Delicious</i>
+          <div class="counter" data-target="100">0</div>
+          <p class="descriptionTextCounter">Lunch Items</p>
+            </div>
+            <div>
+              <i class="hot">Hot</i>
+              <div class="counter" data-target="50">0</div>
+              <p class="descriptionTextCounter">Coffee Items</p>
+                </div>
+                <div>
+                  <i class="satisfied">Satisfied</i>
+                  <div class="counter" data-target="3500">0</div>
+                  <p class="descriptionTextCounter">Customers</p>
+                    </div>  
+      </div>
+    </section>
+    <section id="restaurantMenu">
+      <div class="restaurantMenuArea">
+        <p class="discoverText">Discover</p>
+      <p class="aboutUsTitle">MENU</p>
+      <div class="containerLineTop line">
+        <div class="firstLine"></div>
+      <div class="spoon"><img src="styles/images/311611.svg" alt="" width="20" height="20"></div>
+      <div class="secondLine"></div>
+      </div>
+             <div class="menuContainer">
+          <div class="topMenuContainer" id="menuBlock">
+              <div class="breakfastMealsIcon">
+                <div class="breakfastIcon"><a href="menu.html#breakfastMenu" id="break">Breakfast</a></div>
+              <div class="mealsIcon"><a href="menu.html#mealsMenu" id="ml">Meals</a></div>
+              </div>
+              <div class="snacksIcon"><a href="menu.html#snackMenu" id="sn">Snacks</a></div>
+          </div>
+          <div class="bottomMenuContainer" id="menuBlock">
+              <div class="dessertsIcon"><a href="menu.html#dessertsMenu" id="des">Desserts</a></div>
+              <div class="drinkIcon"><a href="menu.html#drinkMenu" id="dr">Drink</a></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reservation">
+      <div class="reservationContainer">
+        <p class="discoverText">Make a</p>
+      <p class="aboutUsTitle reservationTitle" id="reservation">Reservation</p>
+      <div class="containerLineTop reservationLine">
+        <div class="firstLine"></div>
+      <div class="spoon"><img src="styles/images/311611.svg" alt="" width="20" height="20"></div>
+      <div class="secondLine"></div>
+      </div>
+      <div class="form">
+        <div class="form-text">
+            <h1>Book Now</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, fugit.</p>
+        </div>
+        <div class="main-form">
+            <form action="index.html" method="get" id="form">
+                <div>
+                    <span>Your full name ?</span>
+                    <input type="text" name="name" id="name" placeholder="Write your name here..." required>
+                </div>
+                <div>
+                    <span>Your email address ?</span>
+                    <input type="email" name="email" id="email" placeholder="Write your email here..." required> 
+                </div>
+                <div>
+                    <!-- <---this is the select option--->
+                    <span>How many people ?</span>
+                    <select name="people" id="people" required>
+                        <option value=""><---People---></option>
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                    </select>
+                    <!-- <---this is the select option--->
+                </div>
+                <div>
+                    <span>What time ?</span>
+                    <input type="text" name="time" id="time" placeholder="Time" required>
+                </div>
+                <div>
+                    <span>What is the date ?</span>
+                    <input type="date" name="date" id="date" placeholder="date" required>
+                </div>
+                <div>
+                    <span>Your phone number ?</span>
+                    <input type="number" name="number" id="number" placeholder="Write your number here..." required>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="SUBMIT" id="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    </section>
+    <section class="gallery" id="sliderGallery">
+      <p class="discoverText">Discover</p>
+      <p class="aboutUsTitle" id="aboutUs">Our Gallery</p>
+      <div class="containerLineTop line">
+        <div class="firstLine"></div>
+      <div class="spoon"><img src="styles/images/311611.svg" alt="" width="20" height="20"></div>
+      <div class="secondLine"></div>
+      </div>
+      <div class="imageWrapper">
+        <div class="slider">
+          <img src="styles/images/slider1.jpg" alt="" class="imageWrap">
+          <img src="styles/images/slider2.jpg" alt="" class="imageWrap">
+          <img src="styles/images/slider3.jpg" alt="" class="imageWrap">
+          <img src="styles/images/slider4.jpg" alt="" class="imageWrap">
+        </div>
+      </div>
+    </section>
+    <section class="ourSlogan">
+      <div class="ourSloganContainer">
+        <div class="ourSloganBlock">
+          <p class="discoverText">Festimonals</p>
+        <p class="aboutUsTitle" id="aboutUs">What Owners Say</p>
+        <div class="containerLineTop ourSloganLine">
+          <div class="firstLine"></div>
+        <div class="spoon"><img src="styles/images/311611.svg" alt="" width="20" height="20"></div>
+        <div class="secondLine"></div>
+        </div>
+        </div>
+        <p class="ourQuote">
+          Although a great restaurant experience must include great food, a bad restaurant experience can be achieved through bad service alone. Ideally, service is invisible. You notice it only when something goes wrong. ― Yaroslav Yarynych
+        </p>
+    </section>
+    <section class="masterChefsTitle" id="chefs">
+        <div class="topBlock">
+         <p class="discoverText">Our Professionals</p>
+         <p class="masterChefTitle" id="masterChefTitle">Master Chefs</p>
+        </div>
+       <div class="containerLineTop">
+         <div class="firstLine"></div>
+       <div class="spoon"><img src="styles/images/311611.svg" alt="" width="20" height="20"></div>
+       <div class="secondLine"></div>
+       </div>
+    </section>
+    <section class="masterChefs">
+      <div class="chef">
+        <div class="firstChef"></div>
+        <h2 class="chefName">Massimo Bottura</h2>
+        <p class="chefPosition">Head Chef</p>
+        <div class="chefIcon">
+          <a href="https://www.instagram.com/slavik_yarynych/"><img src="styles/images/twitter-svgrepo-com.svg" alt="" class="socialMedia twitter"></a>
+          <a href="https://www.instagram.com/slavik_yarynych/"><img src="styles/images/facebook-svgrepo-com.svg" alt="" class="socialMedia facebook"></a>
+          <a href="https://www.instagram.com/slavik_yarynych/"><img src="styles/images/instagram-svgrepo-com.svg" alt="" class="socialMedia instagram"></a>
+        </div>
+      </div>
+      <div class="chef">
+        <div class="secondChef"></div>
+        <h2 class="chefName">Giada De Laurentiis</h2>
+        <p class="chefPosition">Deputy Chef</p>
+        <div class="chefIcon">
+          <a href="https://www.instagram.com/slavik_yarynych/"><img src="styles/images/twitter-svgrepo-com.svg" alt="" class="socialMedia twitter"></a>
+          <a href="https://www.instagram.com/slavik_yarynych/"><img src="styles/images/facebook-svgrepo-com.svg" alt="" class="socialMedia facebook"></a>
+          <a href="https://www.instagram.com/slavik_yarynych/"><img src="styles/images/instagram-svgrepo-com.svg" alt="" class="socialMedia instagram"></a>
+        </div>
+      </div>
+      <div class="chef">
+        <div class="thirdChef"></div>
+        <h2 class="chefName">Fabio Viviani</h2>
+        <p class="chefPosition">Station Chef</p>
+        <div class="chefIcon">
+          <a href="https://www.instagram.com/slavik_yarynych/"><img src="styles/images/twitter-svgrepo-com.svg" alt="" class="socialMedia twitter"></a>
+          <a href="https://www.instagram.com/slavik_yarynych/"><img src="styles/images/facebook-svgrepo-com.svg" alt="" class="socialMedia facebook"></a>
+          <a href="https://www.instagram.com/semkivq/"><img src="styles/images/instagram-svgrepo-com.svg" alt="" class="socialMedia instagram"></a>
+        </div>
+      </div>
+      <div class="chef">
+        <div class="fourthChef"></div>
+        <h2 class="chefName">Gennaro Contaldo</h2>
+        <p class="chefPosition">Junior Chef</p>
+        <div class="chefIcon">
+          <a href="https://www.instagram.com/slavik_yarynych/"><img src="styles/images/twitter-svgrepo-com.svg" alt="" class="socialMedia twitter"></a>
+          <a href="https://www.instagram.com/slavik_yarynych/"><img src="styles/images/facebook-svgrepo-com.svg" alt="" class="socialMedia facebook"></a>
+          <a href="https://www.instagram.com/slavik_yarynych/"><img src="styles/images/instagram-svgrepo-com.svg" alt="" class="socialMedia instagram"></a>
+        </div>
+        </div>
+    </section>
+     <section class="contacts" id="contact">
+      <div class="titleContacts">
+        <div class="topBlock">
+          <p class="discoverText">Get In Touch</p>
+          <p class="contactsTitle">Contact Us</p>
+         </div>
+        <div class="containerLineTop">
+          <div class="firstLine"></div>
+        <div class="spoon"><img src="styles/images/311611.svg" alt="" width="20" height="20"></div>
+        <div class="secondLine"></div>
+        </div>
+      </div>
+      <div class="formContacts">
+          <div class="formContactWithUs">
+            <form>
+              <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Your Name</label>
+              </div>
+              <div class="user-box">
+                <input type="email" name="" required="">
+                <label>Email</label>
+              </div>
+               <div class="user-box">
+                <input type="text" name="" required="">
+                <label>Subject</label>
+              </div>
+              <div class="user-box">
+                <input type="textarea" name="" required="">
+                <label>Message</label>
+              </div>
+              <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+              </a>
+            </form>
+          </div>
+          <div class="contactsDescription">
+            <h2 class="address titleCont">
+              Office Address
+            </h2>
+            <span>If you want to colaborate - call.</span>
+            <div class="phoneOffice"><img src="" alt=""><span>(850) 457 8888</span></div>
+            <div class="emailOffice"><img src="" alt=""><span>slavik@gmail.com</span></div>
+            <div class="locationOffice"><img src="" alt=""><span>368 St. Panama City, Venice, Italy</span></div>
+            <div class="address">
+              <div class="day">Monday - Friday 9.00 am to 12 pm</div>
+              <div class="day">Saturday 9.00 am to 10 pm</div>
+              <div class="day">Sunday 10.00 am to 12 pm</div>
+            </div>
+          </div>
+      </div>
+    </section>   
+    <section class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2420.653958267208!2d12.34642803192227!3d45.433683423821876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eae25ebd484eb%3A0x7580058aeacc7e86!2z0JDRgNGB0LXQvdCw0Ls!5e1!3m2!1suk!2sua!4v1652369147198!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer>
+      <div class="footerMedia">
+        <div class="instagramFooter"><a href="https://www.google.com.ua/?hl=ua"><img src="styles/images/instFoot.svg" alt="" width="50" height="50"></a></div>
+        <div class="facebookFooter"><a href="https://www.google.com.ua/?hl=ua"><img src="styles/images/faceFoot.svg" alt="" width="50" height="50"></a></div>
+        <div class="twitterFooter"><a href="https://www.google.com.ua/?hl=ua"><img src="styles/images/twitFoot.svg" alt="" width="50" height="50"></a></div>
+        <div class="youtubeFooter"><a href="https://www.google.com.ua/?hl=ua"><img src="styles/images/youtFoot.svg" alt="" width="50" height="50"></a></div>
+        <div class="googleFooter"><a href="https://www.google.com.ua/?hl=ua"><img src="styles/images/googFoot.svg" alt="" width="50" height="50"></a></div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
